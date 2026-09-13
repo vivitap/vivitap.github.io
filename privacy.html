@@ -56,7 +56,42 @@
                     <p>
                         Vivitap is dedicated to highly private solutions.
                     </p>
-                    <p> None of our products share your data. </p>
+                    <h2>Connection Tracker (Contrac)</h2>
+                    <p>Updated September 13, 2026. This section describes the Connection Tracker Windows app.</p>
+                    <h3>Internet connectivity checks</h3>
+                    <p>
+                        While running, the app sends ICMP echo requests (pings) to Cloudflare (1.1.1.2),
+                        Google (8.8.8.8), Cisco OpenDNS (208.67.222.222), and Quad9 (9.9.9.9) to measure
+                        response times and detect connection outages. These services and network operators
+                        can observe the requests and their source IP address. Their own policies govern
+                        their handling of that network information.
+                    </p>
+                    <h3>Information stored on your device</h3>
+                    <p>
+                        The app keeps connectivity samples in memory and stores graph settings in your
+                        Windows user registry. It automatically saves outage logs in your Documents folder
+                        and can save a detailed sample report when you select the report command. A detailed
+                        report is written to the app's working directory. Log filenames include your computer
+                        name and the session's start time. Depending on the report, contents include
+                        destination IP addresses, timestamps, response times, and outage durations.
+                    </p>
+                    <p>
+                        The app does not upload these logs to Vivitap or the connectivity-check providers.
+                        It does not include advertising or app analytics reporting to Vivitap.
+                    </p>
+                    <h3>Sharing, backup, and deletion</h3>
+                    <p>
+                        Review logs before sharing them with an internet service provider or anyone else:
+                        their filenames can identify your computer. Windows, OneDrive, or other backup
+                        software may copy saved files according to your settings. That backup or sharing
+                        is controlled by you and those services, not by a log-upload feature in the app.
+                    </p>
+                    <p>
+                        Close the app to stop its connectivity checks and discard in-memory samples.
+                        Saved logs remain until you delete them; uninstalling the app does not necessarily
+                        remove files in Documents or their backup copies. Manage those copies separately.
+                    </p>
+                    <p>For privacy questions, <a href="support.html">contact Vivitap support</a>.</p>
                   
                 </div>
             </div>
